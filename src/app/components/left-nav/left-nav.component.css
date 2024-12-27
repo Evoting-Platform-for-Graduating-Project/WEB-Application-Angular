@@ -1,0 +1,45 @@
+
+.navigation-panel {
+    position: fixed;
+    width: 200px;
+    border-radius: 0px 29.029px 29.029px 0px;
+    background: linear-gradient(178deg, #557EBC -10.08%, #436496 63.93%, #38547E 109.3%);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-size: 1.75rem;
+    font-style: medium;
+    line-height: 150%; /* 2.625rem */
+    margin-top: 80px;
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+  
+  .navbuttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .nav-item {
+    padding: 10px 40px;
+    margin: 5px 0;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item.active {
+    background-color: white;
+    color: #557EBC;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+  }
+  
