@@ -15,20 +15,6 @@ export class TimerComponent implements OnInit {
     format: 'HH:mm:ss',
   };
 
-  // ngOnChanges(): void {
-  //   if (this.deadline) {
-  //     const now = new Date().getTime();
-  //     const deadlineTime = new Date(this.deadline).getTime();
-  //     const diffInSeconds = Math.max(Math.floor((deadlineTime - now) / 1000), 0);
-
-  //     this.countdownConfig = {
-  //       leftTime: diffInSeconds,
-  //       format: 'HH:mm:ss',
-  //       notify: [0]
-  //     };
-  //   }
-  // }
-
   ngOnInit() {
     this.updateCountdown();
   }
