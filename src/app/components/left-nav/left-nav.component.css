@@ -5,15 +5,15 @@
     border-radius: 0px 29.029px 29.029px 0px;
     background: linear-gradient(178deg, #557EBC -10.08%, #436496 63.93%, #38547E 109.3%);
     color: #FFF;
-    font-family: Inter;
+    font-family: Inter, helvetica;
     font-size: 20px;
     font-size: 1.75rem;
     font-style: medium;
     line-height: 150%; /* 2.625rem */
     margin-top: 80px;
     padding: 20px;
-    height: 100vh; /* Full height of the viewport */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    height: 100vh; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
   }
   
   .navbuttons {
@@ -40,6 +40,6 @@
   }
   
   .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+    background-color: rgba(255, 255, 255, 0.1); 
   }
   

@@ -1,5 +1,5 @@
 .dashboard {
-    font-family: Inter;
+    font-family: Inter, helvetica;
     display: inline-flex;
     padding: 3.875rem 8.6875rem 13.0625rem 8.75rem;
     flex-direction: column;
@@ -15,16 +15,38 @@
     line-height: 150%;
 }
 
-.activevotes p {
+.activevotes {
+    width: 72.38694rem;
+    height: 6.48344rem;
+    flex-shrink: 0;
+}
+
+/* .activevotes p {
     display: flex;
     flex-direction: column;
-}
+} */
 
 #header {
-    font-size: 26px;
-    font-weight: 500;
+    /* font-size: 26px;
+    font-weight: 500; */
+    width: 27.26075rem;
+    height: 1.07838rem;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 1.62806rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 3.64213rem */
 }
 
 .activevotes p {
-    font-size: 20px;
+    /* font-size: 20px; */
+    width: 72.38694rem;
+    height: 1.96031rem;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 1.22106rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.73156rem */
 }
