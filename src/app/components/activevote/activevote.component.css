@@ -1,6 +1,6 @@
 .container {
     width: 92.5625rem;
-    height: 10.1875rem;
+    height: 9.1875rem;
     flex-shrink: 0;
     border-radius: 0.73325rem;
     background: #FAFAFA;
@@ -13,12 +13,13 @@
 }
 
 #status {
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #e9e9e9;
     color: #6199ec;
     border-radius: 15px;
     height: fit-content;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     white-space: nowrap;
     display: inline-block;
     text-transform: uppercase;
