@@ -70,8 +70,10 @@
     outline: 3px solid #38547E;
     color: #38547E;
     font-size: 1.5rem;
-    padding: 20px;
-    margin-left: 800px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 730px;
     margin-top: auto;
     margin-bottom: auto;
     height: fit-content;
