@@ -11,5 +11,4 @@ import {UpcomingvoteComponent} from './components/upcomingvote/upcomingvote.comp
 })
 export class AppComponent {
   title = 'evoting';
-  deadline: Date = new Date('2024-12-28T23:59:59');
 }
