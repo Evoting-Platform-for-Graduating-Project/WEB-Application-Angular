@@ -3,9 +3,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { LeftNavComponent } from './components/left-nav/left-nav.component';
 import { ActivevoteComponent } from './components/activevote/activevote.component';
 import {UpcomingvoteComponent} from './components/upcomingvote/upcomingvote.component';
+import { RouterOutlet} from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { RouterLinkActive} from '@angular/router';
+
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, LeftNavComponent, ActivevoteComponent, UpcomingvoteComponent],
+  imports: [HeaderComponent, LeftNavComponent, ActivevoteComponent, UpcomingvoteComponent, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

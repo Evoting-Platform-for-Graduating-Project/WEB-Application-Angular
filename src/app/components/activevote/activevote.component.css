@@ -68,7 +68,6 @@
 #votebutton {
     display: flex;
     outline: 3px solid #38547E;
-    color: #38547E;
     font-size: 1.5rem;
     white-space: nowrap;
     padding-left: 10px;
@@ -79,4 +78,9 @@
     height: fit-content;
     border-radius: 15px;
     cursor: pointer;
+}
+
+#votebutton a {
+  text-decoration: none;
+  color: #38547E;
 }

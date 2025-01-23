@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { TimerComponent } from '../timer/timer.component';
+import {RouterLink} from '@angular/router';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-activevote',
   standalone: true,
-  imports: [TimerComponent],
+  imports: [TimerComponent, RouterLink, RouterOutlet],
   templateUrl: './activevote.component.html',
   styleUrl: './activevote.component.css'
 })

@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Wybory Prezydenckie 2024</h2>
+  <p>Zaznacz jednego kandydata na którego chcesz zagłosować</p>
+
+  <div class="candidate-list">
+    <div *ngFor="let candidate of candidates" class="candidate-item" [ngClass]="{'selected': candidate.id === selectedCandidate}">
+      <div class="candidate-details">
+        <strong>{{ candidate.name }}</strong>
+        <p>{{ candidate.party }}</p>
+      </div>
+      <input
+        type="radio"
+        name="candidate"
+        [value]="candidate.id"
+        [(ngModel)]="selectedCandidate"
+      />
+    </div>
+  </div>
+
+  <button class="submit-btn" [disabled]="!selectedCandidate" (click)="submitVote()">
+    Oddaj głos
+  </button>
+</div>
