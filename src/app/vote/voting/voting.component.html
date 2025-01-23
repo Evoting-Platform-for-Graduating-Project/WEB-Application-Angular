@@ -3,7 +3,7 @@
   <p>Zaznacz jednego kandydata na którego chcesz zagłosować</p>
 
   <div class="candidate-list">
-    <div *ngFor="let candidate of candidates" class="candidate-item" [ngClass]="{'selected': candidate.id === selectedCandidate}">
+    <label *ngFor="let candidate of candidates" class="candidate-item" [ngClass]="{'selected': candidate.id === selectedCandidate}">
       <div class="candidate-details">
         <strong>{{ candidate.name }}</strong>
         <p>{{ candidate.party }}</p>
@@ -13,8 +13,9 @@
         name="candidate"
         [value]="candidate.id"
         [(ngModel)]="selectedCandidate"
+        class="hidden-radio"
       />
-    </div>
+    </label>
   </div>
 
   <button class="submit-btn" [disabled]="!selectedCandidate" (click)="submitVote()">
