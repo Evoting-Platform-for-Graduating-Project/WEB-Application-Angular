@@ -1,6 +1,5 @@
 <div class="container">
-  <h2>Wybory Prezydenckie 2024</h2>
-  <p>Zaznacz jednego kandydata na którego chcesz zagłosować</p>
+  <h2>Lista kandydatów:</h2>
 
   <div class="candidate-list">
     <label *ngFor="let candidate of candidates" class="candidate-item" [ngClass]="{'selected': candidate.id === selectedCandidate}">

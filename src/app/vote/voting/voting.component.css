@@ -1,8 +1,9 @@
 .container {
-  max-width: 500px;
+  width: 90rem;
+  /*max-width: 100vh;*/
   margin: 0 auto;
   background: #FAFAFA;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -10,8 +11,9 @@
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #2c3e50;
+  text-align: left;
 }
 
 .candidate-list {
@@ -27,7 +29,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 10px 15px;
+  padding: 20px 25px;
   margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 7.4px 0 rgba(0, 0, 0, 0.09);
@@ -37,6 +39,7 @@ h2 {
 .candidate-item.selected {
   box-sizing: border-box;
   border: 3px solid #557EBC;
+  transition: border 0.1s ease;
 }
 
 .candidate-details {
@@ -64,11 +67,12 @@ input[type='radio'] {
   background: #38547E;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 20px 20px;
+  font-size: 2rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
+
 }
 
 .submit-btn:disabled {
@@ -77,5 +81,5 @@ input[type='radio'] {
 }
 
 .submit-btn:not(:disabled):hover {
-  background: #2980b9;
+  background: #446499;
 }
