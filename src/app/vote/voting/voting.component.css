@@ -3,7 +3,7 @@
   /*max-width: 100vh;*/
   margin: 0 auto;
   background: #FAFAFA;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -20,8 +20,20 @@ h2 {
   margin: 20px 0;
 }
 
-.hidden-radio {
-  display: none;
+.visible-radio {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7f8c8d;
+  border-radius: 50%;
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.visible-radio:checked {
+  border-color: #557EBC;
+  background-color: #557EBC;
 }
 
 .candidate-item {
@@ -32,14 +44,15 @@ h2 {
   padding: 20px 25px;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: 3px solid white;
+  box-sizing: border-box;
   box-shadow: 0 4px 7.4px 0 rgba(0, 0, 0, 0.09);
   cursor: pointer;
 }
 
 .candidate-item.selected {
-  box-sizing: border-box;
-  border: 3px solid #557EBC;
-  transition: border 0.1s ease;
+  border-color: #557EBC;
+  transition: border 0.3s ease;
 }
 
 .candidate-details {
@@ -69,6 +82,7 @@ input[type='radio'] {
   border: none;
   padding: 20px 20px;
   font-size: 2rem;
+  font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
