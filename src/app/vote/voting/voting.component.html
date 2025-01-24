@@ -25,7 +25,7 @@
       <p class="confirm-label">Potwierdź swój głos</p>
       <p class="confirm-question">Czy chcesz oddać głos na: <strong class="candidate-name">{{selectedCandidate}}</strong></p>
       <div class="popup-actions">
-        <button class="confirm-btn" (click)="submitVote()">Tak</button>
+        <a routerLink="/AfterVote"><button class="confirm-btn" (click)="submitVote()">Tak</button></a>
         <button class="cancel-btn" (click)="closeConfirmation()">Nie</button>
       </div>
     </div>

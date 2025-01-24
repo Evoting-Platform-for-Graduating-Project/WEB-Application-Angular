@@ -147,6 +147,10 @@ input[type='radio'] {
   gap: 20px;
 }
 
+.popup-actions a {
+  text-decoration: none;
+}
+
 .confirm-btn {
   width: 10rem;
   background: #38547E;

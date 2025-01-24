@@ -3,11 +3,12 @@ import {FormsModule} from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { NgIf} from '@angular/common';
 import { NgClass} from '@angular/common';
+import { RouterLink} from '@angular/router';
 
 
 @Component({
   selector: 'app-voting',
-  imports: [FormsModule, NgFor, NgClass, NgIf],
+  imports: [FormsModule, NgFor, NgClass, NgIf, RouterLink],
   templateUrl: './voting.component.html',
   styleUrl: './voting.component.css'
 })
