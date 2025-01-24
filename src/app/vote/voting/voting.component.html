@@ -17,7 +17,17 @@
     </label>
   </div>
 
-  <button class="submit-btn" [disabled]="!selectedCandidate" (click)="submitVote()">
+  <button class="submit-btn" [disabled]="!selectedCandidate" (click)="openConfirmation()">
     Oddaj głos
   </button>
+  <div class="popup-overlay" *ngIf="showPopUp">
+    <div class="popup-window">
+      <p class="confirm-label">Potwierdź swój głos</p>
+      <p class="confirm-question">Czy chcesz oddać głos na: <strong class="candidate-name">{{selectedCandidate}}</strong></p>
+      <div class="popup-actions">
+        <button class="confirm-btn" (click)="submitVote()">Tak</button>
+        <button class="cancel-btn" (click)="closeConfirmation()">Nie</button>
+      </div>
+    </div>
+  </div>
 </div>
