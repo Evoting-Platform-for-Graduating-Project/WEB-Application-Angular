@@ -1,6 +1,7 @@
 .container {
   font-family: Inter, helvetica, arial, sans-serif;
   display: flex;
+  width: fit-content;
   flex-direction: column;
   justify-content: center;
   align-items: center;
