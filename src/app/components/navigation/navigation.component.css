@@ -1,0 +1,60 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav-container {
+  flex: 1;
+  background: none;
+}
+
+.sidenav {
+  width: 200px;
+  background: linear-gradient(178deg, #557EBC -10.08%, #436496 63.93%, #38547E 109.3%);
+  border-radius: 0 29.029px 0 0;
+
+}
+
+
+.mat-sidenav-content {
+  background: #E9F2FF;
+}
+
+.mat-toolbar {
+  position: relative;
+  background: #FFFFFF;
+  height: 8%;
+}
+
+.navlist {
+  width: 200px;
+  color: #FFFFFF;
+}
+.navbuttons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.nav-item {
+  padding: 10px 40px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-item.active {
+  background-color: white;
+  color: #557EBC;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
