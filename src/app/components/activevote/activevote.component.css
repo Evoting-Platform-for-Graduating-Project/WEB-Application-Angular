@@ -139,10 +139,10 @@
 /*  }*/
 /*}*/
  .active-banner {
-   max-width: 100%;
+   width: 100%;
    display: flex;
    flex-direction: row;
-   gap: 1rem;
+   gap: 0.5rem;
    overflow: hidden;
    border: none;
    box-shadow: 0 0 15.113px -4.141px rgba(0, 0, 0, 0.14);
@@ -172,10 +172,12 @@ button {
   margin-top: 1rem;
   text-decoration: none;
   color: #557EBC;
-  background-color: #e7ecef;
+  background-color: #F1F1F1;
   border-radius: 0.2rem;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0.5rem;
 }
+
+
