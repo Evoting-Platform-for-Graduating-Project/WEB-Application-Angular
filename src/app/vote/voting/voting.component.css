@@ -27,11 +27,9 @@
 .container {
   position: relative;
   width: 100%;
-  /*max-width: 65vw;*/
   background: white;
   padding: 10px 40px 10px 40px;
   border-radius: 8px;
-  /*margin: auto;*/
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -99,7 +97,6 @@ p {
 
 input[type='radio'] {
   margin: 0;
-  /*transform: scale(1.2);*/
 }
 
 .submit-btn {
