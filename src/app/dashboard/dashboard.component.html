@@ -9,8 +9,23 @@
           <app-activevote></app-activevote>
         </div>
         <span class="header">Nadchodzące głosowania</span>
-        <span>Sprawdź jakie głosownia odbędą się w najbliżym czasie:</span>
-        <div id="upcomingbanner">
+        <span>Sprawdź jakie głosownia odbędą się w najbliższym czasie:</span>
+        <div id="upcomingbanner" (mouseenter)="showButtons()" (mouseleave)="showButtons()" (scroll)="showButtons()" #cardSlide>
+
+          <button mat-mini-fab aria-label="Example icon button with a menu icon" class="left"
+                  *ngIf="showLeftButton"
+                  (click)="scrollLeft()">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <button mat-mini-fab aria-label="Example icon button with a menu icon" class="right"
+                  *ngIf="showRightButton"
+                  (click)="scrollRight()">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+          <app-upcomingvote></app-upcomingvote>
+          <app-upcomingvote></app-upcomingvote>
+          <app-upcomingvote></app-upcomingvote>
+          <app-upcomingvote></app-upcomingvote>
           <app-upcomingvote></app-upcomingvote>
         </div>
       </div>
