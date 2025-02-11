@@ -5,9 +5,14 @@
   gap: 0.5rem;
   padding: 10px;
   border-radius: 0.61525rem;
+  border: none;
   background: #F1F1F1;
   color: #38547E;
   font-weight: 600;
+  cursor: pointer;
+}
+.mat-menu {
+  border-radius: 0.61525rem;
 }
 
 .upcomingvote {
@@ -20,9 +25,24 @@
   box-shadow: 0 0 15.113px -4.141px rgba(0, 0, 0, 0.14);
 }
 
+@media (max-width: 768px) {
+  .upcomingvote {
+    width: 310px;
+  }
+}
+
 .actions {
   padding-left: 1rem;
   padding-bottom: 1rem;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.button-label {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card-title {

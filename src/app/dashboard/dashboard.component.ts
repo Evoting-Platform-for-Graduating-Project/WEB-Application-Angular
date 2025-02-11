@@ -17,18 +17,24 @@ export class DashboardComponent {
   @ViewChild('cardSlide') cardSlide!: ElementRef<HTMLElement>;
   showLeftButton: boolean = false;
   showRightButton: boolean = true;
+  isMobile: boolean = false;
 
   scrollLeft() {
-    this.cardSlide.nativeElement.scrollBy ({left: -366, behavior: 'smooth'});
+    this.cardSlide.nativeElement.scrollBy ({left: -this.getScrollAmount(), behavior: 'smooth'});
   }
   scrollRight() {
-    this.cardSlide.nativeElement.scrollBy ({left: 366, behavior: 'smooth'});
+    this.cardSlide.nativeElement.scrollBy ({left: this.getScrollAmount(), behavior: 'smooth'});
   }
 
   showButtons() {
     const container = this.cardSlide.nativeElement;
     this.showLeftButton = container.scrollLeft > 0;
     this.showRightButton = container.scrollLeft + container.offsetWidth < container.scrollWidth;
+  }
+
+  getScrollAmount() {
+    const container = this.cardSlide.nativeElement;
+    return container.scrollWidth / 5;
   }
 
 }

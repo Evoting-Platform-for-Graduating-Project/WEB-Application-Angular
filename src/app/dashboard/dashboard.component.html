@@ -13,12 +13,12 @@
         <div id="upcomingbanner" (mouseenter)="showButtons()" (mouseleave)="showButtons()" (scroll)="showButtons()" #cardSlide>
 
           <button mat-mini-fab aria-label="Example icon button with a menu icon" class="left"
-                  *ngIf="showLeftButton"
+                  *ngIf="showLeftButton && !isMobile"
                   (click)="scrollLeft()">
             <mat-icon>chevron_left</mat-icon>
           </button>
           <button mat-mini-fab aria-label="Example icon button with a menu icon" class="right"
-                  *ngIf="showRightButton"
+                  *ngIf="showRightButton && !isMobile"
                   (click)="scrollRight()">
             <mat-icon>chevron_right</mat-icon>
           </button>

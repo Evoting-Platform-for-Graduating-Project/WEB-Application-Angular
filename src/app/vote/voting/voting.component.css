@@ -28,7 +28,7 @@
   position: relative;
   width: 100%;
   background: white;
-  padding: 10px 40px 10px 40px;
+  /*padding: 10px 40px 10px 40px;*/
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -36,6 +36,8 @@
 
 h2 {
   font-size: 1.5rem;
+  margin-left: 40px;
+  margin-top: 40px;
   margin-bottom: 20px;
   color: #2c3e50;
   text-align: left;
@@ -43,6 +45,7 @@ h2 {
 
 .candidate-list {
   margin: 20px 0;
+  padding: 10px 40px 10px 40px;
 }
 
 .visible-radio {
@@ -107,7 +110,7 @@ input[type='radio'] {
   padding: 20px 20px;
   font-size: 2rem;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   cursor: pointer;
   transition: background 0.3s;
 
